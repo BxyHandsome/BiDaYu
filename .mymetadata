@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="bidayu"
+  id="myeclipse.1557565447736"
+  context-root="/bidayu"
+  j2ee-spec="5.0"
+  archive="bidayu.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
