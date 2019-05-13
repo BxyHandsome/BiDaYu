@@ -14,8 +14,7 @@ import com.mysql.jdbc.ResultSet;
 import com.mysql.jdbc.Statement;
 
 public class loginServlet extends HttpServlet {
-	static String yh, mm;
-
+	
 	/**
 	 * The doGet method of the servlet. <br>
 	 * 
@@ -83,8 +82,8 @@ public class loginServlet extends HttpServlet {
 					.executeQuery("select * from user where user='" + user
 							+ "' and pwd='" + pwd + "'");
 			if (rs.next()) {
-				yh = rs.getString("user");
-				mm = rs.getString("pwd");
+			String	yh = rs.getString("user");
+			String	mm = rs.getString("pwd");
 				if (yh.equals(user) && mm.equals(pwd)) {
 					HttpSession session = request.getSession();
 					session.setAttribute("username", user);

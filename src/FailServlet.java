@@ -42,11 +42,7 @@ public class FailServlet extends HttpServlet {
 		out.println("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">");
 		out.println("<HTML>");
 		out.println("  <HEAD><TITLE>A Servlet</TITLE></HEAD>");
-		out.println("  <BODY>");
-		out.print("    This is fail");
-		out.print(this.getClass());
-		out.println(", using the GET method");
-		out.println("  </BODY>");
+		System.out.println("ΪʲôҪʧ��");
 		out.println("</HTML>");
 		out.flush();
 		out.close();
